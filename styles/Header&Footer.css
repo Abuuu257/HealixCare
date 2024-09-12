@@ -68,7 +68,7 @@ body {
 
     .logo{
         max-height: 150px;
-        margin-left: 7rem;
+        margin-left: 2rem;
     }
 }
 
@@ -87,7 +87,6 @@ footer {
     background-color: teal;
     padding: 20px;
     text-align: center;
-
 }
 
 .footer_txt {
