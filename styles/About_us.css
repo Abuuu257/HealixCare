@@ -1,68 +1,7 @@
 /* General Styles */
 
 
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.logo {
-    max-height: 50px;
-}
-
-.nav {
-    display: flex;
-    gap: 20px;
-}
-
-
-.nav_link {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 20px;
-    border-radius: 30px;
-}
-
-.nav_link:hover{
-    background-color: rgb(8, 92, 92);
-}
-
-@media (max-width: 768px) {
-    .nav {
-        display: none;
-        flex-direction: column;
-        gap: 0;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        padding: 10px;
-        width: 200px;
-    }
-
-    #menu-toggle:checked + .menu-icon + .nav {
-        display: flex;
-    }
-
-    .nav_link {
-        padding: 10px;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .nav_link:last-child {
-        border-bottom: none;
-    }
-}
-
-main {
-    padding: 20px;
-    border-radius: 50px;
-    background-color: rgba(0, 124, 124, 0.5);
-}
 
 h1 {
     font-size: 2rem;
