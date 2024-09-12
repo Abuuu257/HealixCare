@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+
+}
+
+/* Header */
+
+header {
+    background-color: teal;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.footer_txt {
+    margin-bottom: 10px;
+}
+
+.footer_txt_01, .footer_txt_02 {
+    font-weight: bold;
+}
+
+.footer_logo {
+    max-height: 40px;
+    margin-top: 10px;
+}

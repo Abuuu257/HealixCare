@@ -18,219 +18,249 @@ body {
 
 /* CSS for Header */
 
-/* Base Styles */
-.menu {
-    display: flex;
-    background-color: teal;
-    width: 100%;
-    max-width: 100%;
-    height: 10rem;
-    align-items: center;
-    padding: 0 1rem;
-    justify-content: space-between;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .logo {
-    height: 8rem;
-    width: auto;
-    margin: 0px 1.7rem;
+    max-height: 50px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .nav {
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    gap: 15px;
 }
 
 .nav_link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 7rem;
-    height: 1.3cm;
-    border-radius: 1rem;
     text-decoration: none;
-    color: white;
-    transition: background-color 0.3s ease;
-    margin: 0px 20px;
-    position: relative;
+    color: #333;
+    font-weight: bold;
 }
 
-.nav_link:hover {
-    background-color: rgb(27, 93, 86);
+/* Mobile styles */
+#menu-toggle {
+    display: none;
 }
 
-.line {
-    position: relative;
-    left: 10px;
-    border: white solid 1px;
-    height: 80px;
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+        width: 200px;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav {
+        display: flex;
+    }
+
+    .nav_link {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .nav_link:last-child {
+        border-bottom: none;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    #box01 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pic_cluster img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 15px;
+    }
 }
 
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .menu {
+        justify-content: space-between;
+    }
 
+    .nav {
+        display: flex;
+        gap: 20px;
+        position: static;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+    }
 
+    #menu-toggle {
+        display: none;
+    }
 
-/* CSS for Footer */
+    main {
+        padding: 20px;
+    }
 
-footer {
-    background-color: teal;
-    height: 250px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    #box01 {
+        flex-direction: row;
+    }
+
+    .pic_cluster img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
 }
 
-.footer.txt {
-    width: 100px;
-    height: 50px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.footer_logo {
-    width: 200px;
-}
-
-.footer_txt_01,
-.footer_txt_02 {
-    display: inline;
-}
-
-.footer_txt > a:hover {
-    text-decoration: underline;
-}
-
-.footer_txt_01,
-.footer_txt_02,
-a {
-    color: white;
-    text-decoration: none;
-}
-
-.line02 {
-    background-color: white;
-    width: 1px;
-    height: 100px;
-}
-
-/* CSS for Main for all pages */
-
+/* Desktop styles */
 main {
-    border-radius: 5rem 5rem 0rem 0rem;
-    background-color: rgba(255,255,255,0.5);
+    padding: 20px;
 }
 
-/* CSS for index.html */
-
-#para01{
-    margin: 6.5rem 0rem 0rem 0rem ;
-    text-align: center;
-    color: white;
-    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 #box01 {
-    background-image: linear-gradient(to right, rgba(0, 128, 128, 1), rgba(0, 128, 128, .8), rgba(0, 128, 128, .6), rgba(0, 128, 128, .4), rgba(0, 128, 128, .2), rgba(0, 128, 128, 0));
-    border-radius: 50px;
-    width: 95%;
-    max-width: 1600px;
-    height: auto;
-    margin: 6rem auto 0rem auto;
     display: flex;
+    gap: 20px;
     align-items: center;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    justify-content: space-between;
-    transition: all 1s;
-    color: white;
-    font-size: 24px;
-    border: 2px solid white;
 }
 
 .box01_box01 {
-    text-align: center;
-    width: 400px;
-    height: 200px;
-    margin: 0px 200px;
+    flex: 1;
 }
 
-.pic_cluster{
-    position: relative;
-    display: inline-block;
+#para02 {
+    font-size: 1.1rem;
+    color: #666;
 }
 
-.pic_cluster > img {
-    display: block;
-    border-radius: 0px 50px 50px 0px;
-    width: 100%;
-    max-width: 770px;
+.pic_cluster img {
+    max-width: 100%;
     height: auto;
 }
 
-#box02, #box03, #box04{
-    border: 2px solid white;
-    width: 400px;
-    height: 750px;
-    margin: 0px 40px;
-    border-radius: 30px;
-    text-align: center;
-    color: white;
-    transition: all 1s;
+.sec_02 {
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 20px;
     position: relative;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    background-image: linear-gradient(to top, rgba(0, 128, 128, 1), rgba(0, 128, 128, .8), rgba(0, 128, 128, .6), rgba(0, 128, 128, .4), rgba(0, 128, 128, .2), rgba(0, 128, 128, 0));
 }
 
-#box02:hover, #box03:hover, #box04:hover, #box01:hover{
-    transform: scale(1.02);
-}
-
-.sec_02{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 200px 0px;
-}
-
-#box02>img,#box03>img,#box04>img{
-    width: 400px;
-    border-radius: 30px 30px 0px 0px;
-    margin-bottom: 40px;
+section img {
+    width: 100%;
+    height: auto;
     display: block;
 }
 
-#box02_02,#box03_02,#box04_02{
-    margin-top: 40px;
+.gradient_box02, .gradient_box03, .gradient_box04 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-#box02_02,#box03_02,#box04_02,#box02_01,#box03_01,#box04_01{
-    padding: 0px 40px;
-}
-
-#box02_01,#box03_01,#box04_01{
-    text-decoration: underline;
-}
-
-.button01{
-    display: flex;
-    justify-content: center;
-}
-
-.button01>button{
-    padding: 20px;
-    border-radius: 30px;
-    border: 0;
-    background-color: rgb(6, 121, 121);
-    color: white;
-    font-size: 18px;
-    transition: all 1s;
+#box02, #box03, #box04 {
     position: relative;
-    bottom: 5rem;
+    padding: 20px;
+    color: #fff;
 }
 
-.button01>button:hover{
-    background-color: rgb(5, 102, 102);
-    transform: scale(1.02);
+#box02_01, #box03_01, #box04_01 {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
+
+#box02_02, #box03_02, #box04_02 {
+    font-size: 1rem;
+}
+
+ol, ul {
+    padding-left: 20px;
+}
+
+button {
+    background-color: #5bd3ca;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.footer_txt {
+    margin-bottom: 10px;
+}
+
+.footer_txt_01, .footer_txt_02 {
+    font-weight: bold;
+}
+
+.footer_logo {
+    max-height: 40px;
+    margin-top: 10px;
+}
+
 
 /* CSS for About us Page */
 
@@ -666,5 +696,25 @@ option:hover{
         font-size: medium;
         max-width: 100%;
     }
+
+    #menu-toggle {
+        display: none;
+      }
+      
+      .menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #000000;
+        background-color: teal;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-align: center;
+        margin-left: 8cm;
+        position: absolute;
+      }
+      
 }
+
+
 
