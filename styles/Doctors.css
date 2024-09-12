@@ -1,0 +1,54 @@
+/* General Styling for the Doctors Grid */
+.grid_box09 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.doctors {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.doctors:hover {
+    transform: scale(1.05);
+}
+
+.doctors img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.doc_p {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Responsive for Tablets */
+@media (max-width: 1024px) {
+    .grid_box09 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive for Mobile Phones */
+@media (max-width: 768px) {
+    .grid_box09 {
+        grid-template-columns: 1fr;
+    }
+
+    .doctors {
+        padding: 15px;
+    }
+
+    .doctors img {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+    }
+}

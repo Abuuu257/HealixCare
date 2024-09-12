@@ -1,0 +1,49 @@
+/* Main Content */
+.pharmacy_Head {
+    text-align: center;
+    background-color: #5bd3ca;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.pharmacy-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pharmacy-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.group-form1 label, .group-form1 input, .group-form1 select {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.submit-btn {
+    background-color: #5bd3ca;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #4aa9a0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .pharmacy-form {
+        width: 90%;
+    }
+}

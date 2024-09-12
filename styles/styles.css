@@ -1,720 +1,137 @@
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-size: 19px;
-    background-color: teal;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-sizing: border-box;
-    width: 100%;
-    overflow-x:auto;
-}
-
-/* CSS for Header */
-
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 20px;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    max-height: 50px;
-}
-
-.menu-icon {
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.nav {
-    display: flex;
-    gap: 15px;
-}
-
-.nav_link {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-/* Mobile styles */
-#menu-toggle {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .nav {
-        display: none;
-        flex-direction: column;
-        gap: 0;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        padding: 10px;
-        width: 200px;
-    }
-
-    #menu-toggle:checked + .menu-icon + .nav {
-        display: flex;
-    }
-
-    .nav_link {
-        padding: 10px;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .nav_link:last-child {
-        border-bottom: none;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    #box01 {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .pic_cluster img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    button {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-
-    footer {
-        padding: 15px;
-    }
-}
-
-/* Tablet styles */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .menu {
-        justify-content: space-between;
-    }
-
-    .nav {
-        display: flex;
-        gap: 20px;
-        position: static;
-        background-color: transparent;
-        padding: 0;
-        border: none;
-    }
-
-    #menu-toggle {
-        display: none;
-    }
-
-    main {
-        padding: 20px;
-    }
-
-    #box01 {
-        flex-direction: row;
-    }
-
-    .pic_cluster img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    button {
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
-}
-
-/* Desktop styles */
+/* Main content styling */
 main {
     padding: 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-h1 {
+/* Title in the main section */
+#para01 {
     font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
     color: #333;
-    margin-bottom: 20px;
 }
 
-#box01 {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.box01_box01 {
-    flex: 1;
-}
-
+/* Welcome paragraph */
 #para02 {
-    font-size: 1.1rem;
-    color: #666;
-}
-
-.pic_cluster img {
-    max-width: 100%;
-    height: auto;
-}
-
-.sec_02 {
-    margin-top: 20px;
-}
-
-section {
+    font-size: 1.2rem;
     margin-bottom: 20px;
-    position: relative;
+    color: #555;
+    text-align: center;
 }
 
-section img {
+/* Image cluster styling */
+.pic_cluster img {
     width: 100%;
     height: auto;
-    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-.gradient_box02, .gradient_box03, .gradient_box04 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-#box02, #box03, #box04 {
-    position: relative;
+/* Section boxes styling */
+#box01, #box02, #box03, #box04 {
+    background: #fff;
     padding: 20px;
-    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 #box02_01, #box03_01, #box04_01 {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 #box02_02, #box03_02, #box04_02 {
     font-size: 1rem;
+    color: #555;
 }
 
-ol, ul {
-    padding-left: 20px;
+#box02_img, #box03_img, #box04_img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Gradient overlay for better contrast */
+.gradient_box02, .gradient_box03, .gradient_box04 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    border-radius: 8px;
+}
+
+/* Buttons */
+.button01 {
+    text-align: center;
+    margin-top: 20px;
 }
 
 button {
     background-color: #5bd3ca;
     border: none;
-    color: #fff;
     padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
+    font-size: 1.2rem;
+    color: #fff;
     border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00aba9;
 }
 
 button a {
     text-decoration: none;
-    color: #fff;
+    color: inherit;
 }
 
-footer {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid #ddd;
-}
-
-.footer_txt {
-    margin-bottom: 10px;
-}
-
-.footer_txt_01, .footer_txt_02 {
-    font-weight: bold;
-}
-
-.footer_logo {
-    max-height: 40px;
-    margin-top: 10px;
-}
-
-
-/* CSS for About us Page */
-
-.box04{
-    width: 100%;
-    max-width: 100rem;
-    height: 19rem;
-    border-radius: 30px;
-    border: 2px white solid;
-    margin: 3rem 1.7rem;
-    background-color: rgba(0,0,0,0.6);
-    color: rgb(196, 196, 196);
-    padding: 1rem;
-}
-
-.box04_01{
-    text-align: center;
-    text-decoration: underline;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.box04_para_head{
-    text-decoration: underline;
-    margin: 2rem 0rem 2rem 2rem;
-}
-
-.box04_para_body{
-    text-align: justify;
-}
-
-.box05_box{
-    display: flex;
-    margin: 2rem 7rem;
-    background-color: rgba(0,0,0,0.6);
-    border: 2px white solid;
-    border-radius: 30px;
-    width: 90rem;
-    height: auto;
-}
-
-.box_para{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60rem;
-    height: 10rem;
-    margin-left: 2rem;
-    padding: 2rem;
-}
-
-iframe{
-    width: 300px;
-    height: 200px;
-    margin: 2rem;
-}
-
-.para_head{
-    margin: 1rem 0rem;
-    font-size: 21px;
-    text-decoration: underline;
-    font-weight: bolder;
-    color: rgb(146, 146, 146);
-}
-
-.para_body{
-    color: white;
-    text-align: justify;
-}
-
-
-table{
-    border: 3px black;
-    width: 80rem;
-    height: 20rem;
-    text-align: center;
-    margin:3rem 13rem;
-    flex-direction: column;
-    border-collapse: collapse;
-}
-
-
-
-tfoot{
-    color: rgba(0, 0, 0, 0.6);
-    font-size: 15px;
-    font-style: italic;
-    text-align: center;
-
-}
-
-
-/* CSS for services */
-
-.grid_box08{
-    display: grid;
-    grid-template-columns: repeat(2, 4fr);
-    row-gap: 5rem;
-    column-gap: 6rem;
-    margin: 30px 280px;
-    justify-content: center;
-}
-
-.grid_box08 div{
-    width: 100%;
-    max-width: 480px;
-    height: 100%;
-    max-height: 714.5px;
-    border-radius: 33px;
-    border: 2px solid black;
-}
-
-.grid_box08 div img{
-    width: 100%;
-    max-width: 480px;
-    border-radius: 30px 30px 0px 0px;
-}
-
-.grid_box08 div p{
-    color: white;
-    text-align: center;
-    width: 100%;
-    max-width: 450px;
-    height: 200px;
-    margin-top: 30px;
-    padding: 0px 15px;
-    border-radius: 0px 0px 30px 30px;
-}
-
-/* CSS for Doctors */
-
-.box09{
-    text-align: center;
-    font-size: 50px;
-    font-weight: bolder ;
-    color: white;
-    background-color: rgb(16, 85, 85);
-    border-radius: 30px;
-    width: 30%;
-    margin: 100px 0px 0px 600px;
-}
-
-.grid_box09{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin: 100px 200px;
-    row-gap: 5rem;
-    column-gap: 5rem;
-    justify-content: center;
-}
-
-.doctors{
-    width: 100%;
-    max-width: 500px;
-    height: 550px;
-    border: 2px white solid;
-    border-radius: 30px;
-    background: linear-gradient(to top, rgba(0, 128, 128, 1), rgba(0, 128, 128, .8), rgba(0, 128, 128, .6), rgba(0, 128, 128, .4), rgba(0, 128, 128, .2), rgba(0, 128, 128, 0));
-}
-
-.doctors img{
-    border-radius: 30px 30px 0px 0px;
-    width: 100%;
-}
-
-.doctors p{
-    text-align: justify;
-    margin: 25px 15px;
-    
-}
-
-.doctors  .doc_p{
-    text-align: center;
-    font-weight: bold;
-    text-decoration:underline;
-}
-
-
-/* CSS for Reservations */
-
-select{
-    width: 400px;
-    font-size: 16px;
-}
-.reservation_page{
-    width: 500px;
-    margin: 150px 550px;
-    background-color: rgb(7, 151, 151);
-    padding: 35px 50px 50px 50px;
-    border: white 2px solid;
-    border-radius: 30px;
-    box-shadow: 5px 5px 10px  black;
-}
-
-#fname{
-    width: 300px;
-    height: 20px;
-}
-
-.reservation01{
-    font-size: 24px;
-    color: white;
-    text-decoration: underline;
-    margin-bottom: 40px;
-    font-weight: bolder;
-    text-align: center;
-}
-
-#reservation_btn{
-    width: 100px;
-    margin: 20px 10px 10px 10px;
-    padding: 15px;
-    background-color: rgb(13, 102, 102);
-    border-radius: 30px;
-    border: white 2px solid;
-    font-weight: bold;
-    color: white;
-}
-
-#age{
-    width: 30px;
-    height: 30px;
-}
-
-#consult{
-    width: 300px;
-    height: 200px;
-}
-
-#options{
-    height: 30px;
-    overflow-y: scroll;
-}
-
-option:hover{
-    background-color: rgb(165, 165, 165);
-}
-
-/* CSS for Pharmacy */
-
-
-.pharmacy_Head{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0,0,0,0.6);
-    border-radius: 30px;
-    width: 40rem;
-    height: 4rem;
-    margin-left: 35rem;
-    margin-top: 5rem;
-    color: white;
-}
-.pharmacy-form {
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.75);
-    color: black;
-    padding: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-top: 4rem;
-    margin-left: 430px;
-    margin-bottom: 50px;
-    max-width: 900px;
-  }
-  
-  .pharmacy-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .pharmacy-form input,
-  .pharmacy-form select,
-  .pharmacy-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  .pharmacy-form button {
-    background-color: rgb(5, 102, 102);
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    margin-left: 23rem;
-    border-radius: 30px;
-  }
-  
-  .pharmacy-form button:hover {
-    background-color: #555555;
-    color: white;
-  }
-
-/* CSS for FAQ */
-
-/* Base styles (for larger screens) */
-.FAQ_gallery {
-    display: grid;
-    padding: 30px;
-    gap: 5rem;
-    margin: 7rem 0;
-}
-
-.FAQ_boxes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 30px;
-    border: 2px solid black;
-    width: 100%;
-    max-width: 90rem;
-    background-color: white;
-    padding: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.FAQ_img {
-    width: 15%;
-    max-width: 150px;
-    height: auto;
-    border-radius: 100%;
-    margin-right: 3rem;
-}
-
-.FAQ_boxes p {
-    width: 100%;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-}
-
-.FAQ {
-    width: 80%;
-}
-
-.FAQ_desc {
-    color: rgb(108, 108, 108);
-    font-weight: bolder;
-    margin-bottom: 10px;
-}
-
-.FAQ_answers {
-    color: rgb(168, 168, 168);
-    width: 100%;
-    max-width: 70rem;
-    min-height: 8rem;
-    font-size: large;
-}
-
-/* Tablet styles (between 600px and 1024px) */
-@media (max-width: 1024px) {
-    .FAQ_gallery {
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-        padding: 20px;
-        margin: 4rem 0;
-    }
-
-    .FAQ_boxes {
-        flex-direction: column;
-        align-items: center;
-        margin-right: 0rem;
-        padding: 1.5rem;
-        max-width: 100%;
-    }
-
-    .FAQ_img {
-        width: 20%;
-        max-width: 120px;
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-
-    .FAQ {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .FAQ_answers {
-        max-width: 100%;
-    }
-}
-
-/* Mobile styles (600px and below) */
-@media (max-width: 600px) {
-    .FAQ_gallery {
-        grid-template-columns: 1fr;
+/* Responsive styles */
+@media (max-width: 768px) {
+    main {
         padding: 10px;
-        margin: 3rem 0;
     }
 
-    .FAQ_boxes {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
-        padding: 1rem;
-        width: 100%;
+    #para01 {
+        font-size: 2rem;
     }
 
-    .FAQ_img {
-        width: 30%;
-        max-width: 100px;
-        margin-right: 0;
-        margin-bottom: 1rem;
+    #para02 {
+        font-size: 1.1rem;
     }
 
-    .FAQ {
-        width: 100%;
-        margin-left: 0;
-        text-align: center;
+    button {
+        font-size: 1rem;
     }
 
-    .FAQ_desc {
+    #box02_01, #box03_01, #box04_01 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 5px;
+    }
+
+    #para01 {
+        font-size: 1.8rem;
+    }
+
+    #para02 {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+
+    #box02_01, #box03_01, #box04_01 {
         font-size: 1.2rem;
     }
-
-    .FAQ_answers {
-        font-size: medium;
-        max-width: 100%;
-    }
-
-    #menu-toggle {
-        display: none;
-      }
-      
-      .menu-icon {
-        display: block;
-        font-size: 24px;
-        cursor: pointer;
-        color: #000000;
-        background-color: teal;
-        padding: 10px 15px;
-        border-radius: 5px;
-        text-align: center;
-        margin-left: 8cm;
-        position: absolute;
-      }
-      
 }
-
-
-
