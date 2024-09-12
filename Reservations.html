@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealixCare - Reservations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile_styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/Icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/Icons/favicon-16x16.png">
+    <link rel="manifest" href="./images/Icons/site.webmanifest">
+    <link rel="mask-icon" href="./images/Icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#5bd3ca">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="./index.html"><img src="./images/logo.png" alt="logo" class="logo"></a>
+            <div class="line">
+            </div>
+            <nav class="nav">
+                <a href="./index.html" class="nav_link">Home</a>
+                <a href="./About_us.html" class="nav_link">About Us</a>
+                <a href="./Services.html" class="nav_link">Services</a>
+                <a href="./Doctors.html" class="nav_link">Doctors</a>
+                <a href="./Reservations.html" class="nav_link">Reservations</a>   
+                <a href="./Pharmacy.html" class="nav_link">Pharmacy</a>  
+                <a href="./FAQ.html" class="nav_link">FAQ</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="reservation_page">
+        <div class="reservation01">Reservations</div>
+        <form id="form01">
+            <label for="fname">Enter your full name:</label>
+        
+            <input type="text" id="fname" name="fname" required><br><br>
+            <label for="gender">Gender:</label><br><br>
+            <input type="radio" id="male" name="gender" required>
+            <label for="male">Male</label>
+            <br><br>
+            <input type="radio" id="Female" name="gender">
+            <label for="Female">Female</label>
+            <br><br>
+            <input type="radio" id="prefer_no" name="gender">
+            <label for="prefer_no">Prefer not to say</label>
+            <br><br>
+            <label for="age">Age: </label>
+            <input type="text" id="age" name="age" required><br><br>
+            <label for="options">Choose the Doctor:</label><br>
+            <select id="options" name="options">
+                <option value="option1">Neurologist</option>
+                <option value="option2">Orthopedic Surgeon</option>
+                <option value="option3">Gastroenterologist</option>
+                <option value="option4">Thoracic Surgeon</option>
+                <option value="option5">Cardiologist</option>
+                <option value="option6">Urologist</option>
+                <option value="option7">Endocrine Surgeon</option>
+                <option value="option8">Vascular Surgeon</option>
+                <option value="option9">Veterinarian</option>
+            </select><br><br>
+                <h3>Reason for conslutation</h3>
+                <label for="reason"></label>
+                <textarea name="reason" id="reason" rows="4" placeholder="Your reason for consultation..."  required></textarea>
+        </form>
+        <button id="reservation_btn"><a href="#">Submit</a></button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_txt">
+            <p class="footer_txt_01">Email: </p>
+            <a href="mailto:abdulrahman25729@gmail.com">abdulrahman25729@gmail.com</a><br>
+            <p class="footer_txt_02">Tel: </p>
+            <a href="tel:+94760732162">+94 76 073 2162</a>
+        </div>
+        <div class="line02">
+        </div>
+        <a href="./index.html"><img src="./images/logo.png" alt="" class="footer_logo"></a>
+    <!-- add a nice footer -->
+    </footer>
+</body>
+</html>

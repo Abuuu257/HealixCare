@@ -1,0 +1,670 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 19px;
+    background-color: teal;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x:auto;
+}
+
+/* CSS for Header */
+
+/* Base Styles */
+.menu {
+    display: flex;
+    background-color: teal;
+    width: 100%;
+    max-width: 100%;
+    height: 10rem;
+    align-items: center;
+    padding: 0 1rem;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 8rem;
+    width: auto;
+    margin: 0px 1.7rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 1.3cm;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+    margin: 0px 20px;
+    position: relative;
+}
+
+.nav_link:hover {
+    background-color: rgb(27, 93, 86);
+}
+
+.line {
+    position: relative;
+    left: 10px;
+    border: white solid 1px;
+    height: 80px;
+}
+
+
+
+
+/* CSS for Footer */
+
+footer {
+    background-color: teal;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer.txt {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_logo {
+    width: 200px;
+}
+
+.footer_txt_01,
+.footer_txt_02 {
+    display: inline;
+}
+
+.footer_txt > a:hover {
+    text-decoration: underline;
+}
+
+.footer_txt_01,
+.footer_txt_02,
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.line02 {
+    background-color: white;
+    width: 1px;
+    height: 100px;
+}
+
+/* CSS for Main for all pages */
+
+main {
+    border-radius: 5rem 5rem 0rem 0rem;
+    background-color: rgba(255,255,255,0.5);
+}
+
+/* CSS for index.html */
+
+#para01{
+    margin: 6.5rem 0rem 0rem 0rem ;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#box01 {
+    background-image: linear-gradient(to right, rgba(0, 128, 128, 1), rgba(0, 128, 128, .8), rgba(0, 128, 128, .6), rgba(0, 128, 128, .4), rgba(0, 128, 128, .2), rgba(0, 128, 128, 0));
+    border-radius: 50px;
+    width: 95%;
+    max-width: 1600px;
+    height: auto;
+    margin: 6rem auto 0rem auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    transition: all 1s;
+    color: white;
+    font-size: 24px;
+    border: 2px solid white;
+}
+
+.box01_box01 {
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    margin: 0px 200px;
+}
+
+.pic_cluster{
+    position: relative;
+    display: inline-block;
+}
+
+.pic_cluster > img {
+    display: block;
+    border-radius: 0px 50px 50px 0px;
+    width: 100%;
+    max-width: 770px;
+    height: auto;
+}
+
+#box02, #box03, #box04{
+    border: 2px solid white;
+    width: 400px;
+    height: 750px;
+    margin: 0px 40px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    transition: all 1s;
+    position: relative;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to top, rgba(0, 128, 128, 1), rgba(0, 128, 128, .8), rgba(0, 128, 128, .6), rgba(0, 128, 128, .4), rgba(0, 128, 128, .2), rgba(0, 128, 128, 0));
+}
+
+#box02:hover, #box03:hover, #box04:hover, #box01:hover{
+    transform: scale(1.02);
+}
+
+.sec_02{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 200px 0px;
+}
+
+#box02>img,#box03>img,#box04>img{
+    width: 400px;
+    border-radius: 30px 30px 0px 0px;
+    margin-bottom: 40px;
+    display: block;
+}
+
+#box02_02,#box03_02,#box04_02{
+    margin-top: 40px;
+}
+
+#box02_02,#box03_02,#box04_02,#box02_01,#box03_01,#box04_01{
+    padding: 0px 40px;
+}
+
+#box02_01,#box03_01,#box04_01{
+    text-decoration: underline;
+}
+
+.button01{
+    display: flex;
+    justify-content: center;
+}
+
+.button01>button{
+    padding: 20px;
+    border-radius: 30px;
+    border: 0;
+    background-color: rgb(6, 121, 121);
+    color: white;
+    font-size: 18px;
+    transition: all 1s;
+    position: relative;
+    bottom: 5rem;
+}
+
+.button01>button:hover{
+    background-color: rgb(5, 102, 102);
+    transform: scale(1.02);
+}
+
+/* CSS for About us Page */
+
+.box04{
+    width: 100%;
+    max-width: 100rem;
+    height: 19rem;
+    border-radius: 30px;
+    border: 2px white solid;
+    margin: 3rem 1.7rem;
+    background-color: rgba(0,0,0,0.6);
+    color: rgb(196, 196, 196);
+    padding: 1rem;
+}
+
+.box04_01{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.box04_para_head{
+    text-decoration: underline;
+    margin: 2rem 0rem 2rem 2rem;
+}
+
+.box04_para_body{
+    text-align: justify;
+}
+
+.box05_box{
+    display: flex;
+    margin: 2rem 7rem;
+    background-color: rgba(0,0,0,0.6);
+    border: 2px white solid;
+    border-radius: 30px;
+    width: 90rem;
+    height: auto;
+}
+
+.box_para{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+    height: 10rem;
+    margin-left: 2rem;
+    padding: 2rem;
+}
+
+iframe{
+    width: 300px;
+    height: 200px;
+    margin: 2rem;
+}
+
+.para_head{
+    margin: 1rem 0rem;
+    font-size: 21px;
+    text-decoration: underline;
+    font-weight: bolder;
+    color: rgb(146, 146, 146);
+}
+
+.para_body{
+    color: white;
+    text-align: justify;
+}
+
+
+table{
+    border: 3px black;
+    width: 80rem;
+    height: 20rem;
+    text-align: center;
+    margin:3rem 13rem;
+    flex-direction: column;
+    border-collapse: collapse;
+}
+
+
+
+tfoot{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+
+}
+
+
+/* CSS for services */
+
+.grid_box08{
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    row-gap: 5rem;
+    column-gap: 6rem;
+    margin: 30px 280px;
+    justify-content: center;
+}
+
+.grid_box08 div{
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+    max-height: 714.5px;
+    border-radius: 33px;
+    border: 2px solid black;
+}
+
+.grid_box08 div img{
+    width: 100%;
+    max-width: 480px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.grid_box08 div p{
+    color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    height: 200px;
+    margin-top: 30px;
+    padding: 0px 15px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+/* CSS for Doctors */
+
+.box09{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder ;
+    color: white;
+    background-color: rgb(16, 85, 85);
+    border-radius: 30px;
+    width: 30%;
+    margin: 100px 0px 0px 600px;
+}
+
+.grid_box09{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 100px 200px;
+    row-gap: 5rem;
+    column-gap: 5rem;
+    justify-content: center;
+}
+
+.doctors{
+    width: 100%;
+    max-width: 500px;
+    height: 550px;
+    border: 2px white solid;
+    border-radius: 30px;
+    background: linear-gradient(to top, rgba(0, 128, 128, 1), rgba(0, 128, 128, .8), rgba(0, 128, 128, .6), rgba(0, 128, 128, .4), rgba(0, 128, 128, .2), rgba(0, 128, 128, 0));
+}
+
+.doctors img{
+    border-radius: 30px 30px 0px 0px;
+    width: 100%;
+}
+
+.doctors p{
+    text-align: justify;
+    margin: 25px 15px;
+    
+}
+
+.doctors  .doc_p{
+    text-align: center;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+
+/* CSS for Reservations */
+
+select{
+    width: 400px;
+    font-size: 16px;
+}
+.reservation_page{
+    width: 500px;
+    margin: 150px 550px;
+    background-color: rgb(7, 151, 151);
+    padding: 35px 50px 50px 50px;
+    border: white 2px solid;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px  black;
+}
+
+#fname{
+    width: 300px;
+    height: 20px;
+}
+
+.reservation01{
+    font-size: 24px;
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#reservation_btn{
+    width: 100px;
+    margin: 20px 10px 10px 10px;
+    padding: 15px;
+    background-color: rgb(13, 102, 102);
+    border-radius: 30px;
+    border: white 2px solid;
+    font-weight: bold;
+    color: white;
+}
+
+#age{
+    width: 30px;
+    height: 30px;
+}
+
+#consult{
+    width: 300px;
+    height: 200px;
+}
+
+#options{
+    height: 30px;
+    overflow-y: scroll;
+}
+
+option:hover{
+    background-color: rgb(165, 165, 165);
+}
+
+/* CSS for Pharmacy */
+
+
+.pharmacy_Head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 30px;
+    width: 40rem;
+    height: 4rem;
+    margin-left: 35rem;
+    margin-top: 5rem;
+    color: white;
+}
+.pharmacy-form {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.75);
+    color: black;
+    padding: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 4rem;
+    margin-left: 430px;
+    margin-bottom: 50px;
+    max-width: 900px;
+  }
+  
+  .pharmacy-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .pharmacy-form input,
+  .pharmacy-form select,
+  .pharmacy-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .pharmacy-form button {
+    background-color: rgb(5, 102, 102);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 23rem;
+    border-radius: 30px;
+  }
+  
+  .pharmacy-form button:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+/* CSS for FAQ */
+
+/* Base styles (for larger screens) */
+.FAQ_gallery {
+    display: grid;
+    padding: 30px;
+    gap: 5rem;
+    margin: 7rem 0;
+}
+
+.FAQ_boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid black;
+    width: 100%;
+    max-width: 90rem;
+    background-color: white;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.FAQ_img {
+    width: 15%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 100%;
+    margin-right: 3rem;
+}
+
+.FAQ_boxes p {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.FAQ {
+    width: 80%;
+}
+
+.FAQ_desc {
+    color: rgb(108, 108, 108);
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.FAQ_answers {
+    color: rgb(168, 168, 168);
+    width: 100%;
+    max-width: 70rem;
+    min-height: 8rem;
+    font-size: large;
+}
+
+/* Tablet styles (between 600px and 1024px) */
+@media (max-width: 1024px) {
+    .FAQ_gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        padding: 20px;
+        margin: 4rem 0;
+    }
+
+    .FAQ_boxes {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0rem;
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+
+    .FAQ_img {
+        width: 20%;
+        max-width: 120px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .FAQ {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .FAQ_answers {
+        max-width: 100%;
+    }
+}
+
+/* Mobile styles (600px and below) */
+@media (max-width: 600px) {
+    .FAQ_gallery {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        margin: 3rem 0;
+    }
+
+    .FAQ_boxes {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .FAQ_img {
+        width: 30%;
+        max-width: 100px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .FAQ {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .FAQ_desc {
+        font-size: 1.2rem;
+    }
+
+    .FAQ_answers {
+        font-size: medium;
+        max-width: 100%;
+    }
+}
+

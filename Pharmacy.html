@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealixCare - Pharmacy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile_styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/Icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/Icons/favicon-16x16.png">
+    <link rel="manifest" href="./images/Icons/site.webmanifest">
+    <link rel="mask-icon" href="./images/Icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#5bd3ca">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="./index.html"><img src="./images/logo.png" alt="logo" class="logo"></a>
+            <div class="line">
+            </div>
+            <nav class="nav">
+                <a href="./index.html" class="nav_link">Home</a>
+                <a href="./About_us.html" class="nav_link">About Us</a>
+                <a href="./Services.html" class="nav_link">Services</a>
+                <a href="./Doctors.html" class="nav_link">Doctors</a>
+                <a href="./Reservations.html" class="nav_link">Reservations</a>   
+                <a href="./Pharmacy.html" class="nav_link">Pharmacy</a>  
+                <a href="./FAQ.html" class="nav_link">FAQ</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="pharmacy_Head">Pharmacy</section>
+            <div class="pharmacy-form">
+                <h2>Pharmacy Order</h2>
+                <form action="#" method="POST">
+                    <div class="group-form1">
+                        <label for="medicine">Select Medicine:</label>
+                        <select id="medicine" name="medicine" required>
+                            <option value="">--Select Medicine--</option>
+                            <option value="medicine1">Medicine 1</option>
+                            <option value="medicine2">Medicine 2</option>
+                            <option value="medicine3">Medicine 3</option>
+                        </select>
+            
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" required>
+            
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                    </div>
+            
+                    <button type="submit" class="submit-btn">Submit Order</button>
+                </form> 
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_txt">
+            <p class="footer_txt_01">Email: </p>
+            <a href="mailto:abdulrahman25729@gmail.com">abdulrahman25729@gmail.com</a><br>
+            <p class="footer_txt_02">Tel: </p>
+            <a href="tel:+94760732162">+94 76 073 2162</a>
+        </div>
+        <div class="line02">
+        </div>
+        <a href="./index.html"><img src="./images/logo.png" alt="" class="footer_logo"></a>
+    <!-- add a nice footer -->
+    </footer>
+</body>
+</html>

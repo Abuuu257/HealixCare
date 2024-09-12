@@ -1,0 +1,36 @@
+{
+  "name": "HealixCare",
+  "short_name": "Healix",
+  "description": "HealixCare - A medical website offering various services, FAQs, and doctor information.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "162x162",
+      "type": "image/png"
+    },
+    {
+      "src": "border01.png",
+      "sizes": "185x185",
+      "type": "image/png"
+    },
+    {
+      "src": "border02.jpg",
+      "sizes": "68x68",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "border03.jpg",
+      "sizes": "311x311",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "img01.jpg",
+      "sizes": "65x65",
+      "type": "image/jpeg"
+    }
+  ]
+}
