@@ -43,6 +43,36 @@
     transform: translateY(-5px);
 }
 
+.regis_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.regis_btn button {
+    background-color: teal;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom:30PX;
+}
+
+.regis_btn button:hover {
+    background-color: rgb(10, 95, 95);
+}
+
+.regis_btn button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
 /* Mobile and tablet responsiveness */
 @media screen and (max-width: 1024px) {
     .grid_box08 {

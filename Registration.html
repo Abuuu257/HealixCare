@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/Registration.css">
+    <link rel="stylesheet" href="styles/Header&Footer.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/Icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/Icons/favicon-16x16.png">
+    <link rel="manifest" href="./images/Icons/site.webmanifest">
+    <link rel="mask-icon" href="./images/Icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#5bd3ca">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="./index.html"><img src="./images/logo.png" alt="logo" class="logo"></a>
+            <nav class="nav">
+                <a href="./index.html" class="nav_link">Home</a>
+                <a href="./About_us.html" class="nav_link">About Us</a>
+                <a href="./Services.html" class="nav_link">Services</a>
+                <a href="./Doctors.html" class="nav_link">Doctors</a>
+                <a href="./Reservations.html" class="nav_link">Reservations</a>   
+                <a href="./Pharmacy.html" class="nav_link">Pharmacy</a>  
+                <a href="./FAQ.html" class="nav_link">FAQ</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="registeration-form">
+            <h2>Patients Registration Page</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name" required="">
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Email" required="">
+                <label for="address">Address:</label>
+                <input type="text" id="address" placeholder="Address" required="">
+                <label for="contact">Contact No:</label>
+                <input type="text" id="contact" placeholder="Contact" required="">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required="">
+                <label>Gender:</label>
+                <div class="gender">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                    <input type="radio" id="prefer" name="gender" value="prefer">
+                    <label for="prefer">Prefer not to say</label>
+                </div>
+            <button type="submit" id="submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_txt">
+            <p class="footer_txt_01">Email: </p>
+            <a href="mailto:abdulrahman25729@gmail.com">abdulrahman25729@gmail.com</a><br>
+            <p class="footer_txt_02">Tel: </p>
+            <a href="tel:+94760732162">+94 76 073 2162</a>
+        </div>
+        <div class="line02">
+        </div>
+        <a href="./index.html"><img src="./images/logo.png" alt="" class="footer_logo"></a>
+    </footer>
+</body>
+</html>

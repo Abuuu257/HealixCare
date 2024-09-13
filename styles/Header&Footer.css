@@ -97,6 +97,15 @@ footer {
     font-weight: bold;
 }
 
+.footer_txt a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_txt a:hover{
+    text-decoration: underline;
+}
+
 .footer_logo {
     max-height: 100px;
     margin-top: 10px;
