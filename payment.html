@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealixCare - Payment</title>
+    <link rel="stylesheet" href="styles/payment.css">
+    <link rel="stylesheet" href="styles/Header&Footer.css">
+    <script src="./script/payment.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="./index.html"><img src="./images/logo.png" alt="logo" class="logo"></a>
+            <div class="line"></div>
+            <nav class="nav">
+                <a href="./index.html" class="nav_link">Home</a>
+                <a href="./About_us.html" class="nav_link">About Us</a>
+                <a href="./Services.html" class="nav_link">Services</a>
+                <a href="./Doctors.html" class="nav_link">Doctors</a>
+                <a href="./Reservations.html" class="nav_link">Reservations</a>   
+                <a href="./Pharmacy.html" class="nav_link">Pharmacy</a>  
+                <a href="./FAQ.html" class="nav_link">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="payment-container">
+        <section id="payment-form" class="payment-content-box">
+            <h2>Payment Details</h2>
+            <form id="payment-form" class="payment-form">
+
+                <label for="Name">Name</label>
+                <input type="text" id="Name" name="expiry-date" placeholder="Enter Full name">
+
+                <label for="Address">Address</label>
+                <input type="text" id="Address" name="full-address" placeholder="Enter Full Address">
+
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" placeholder="Enter Card Number" >
+
+                <label for="expiry-date">Expiry Date</label>
+                <input type="month" id="expiry-date" name="expiry-date">
+
+                <label for="cvv">CVV</label>
+                <input type="number" id="cvv" name="cvv" placeholder="Enter CVV" >
+
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" name="amount" value="0.00" >
+
+                <button type="submit" id="process-payment" class="submit-btn">Process Payment</button>
+            </form>
+        </section>
+    </main>
+
+    
+</body>
+</html>
