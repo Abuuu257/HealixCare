@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #333;
+    color: black;
     background-color: teal;
 }
 
@@ -27,7 +27,7 @@ body {
 
 .nav_link {
     text-decoration: none;
-    color: #333;
+    color: black;
     font-weight: bold;
     cursor: pointer;
     padding: 20px;

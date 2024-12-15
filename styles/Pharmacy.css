@@ -38,9 +38,7 @@ section {
     transition: background-color 0.3s ease;
 }
 
-.item:hover {
-    background-color: #f8f9fa;
-}
+
 
 .item:last-child {
     border-bottom: none;
@@ -77,7 +75,7 @@ label {
 /* Button styles */
 .add-to-cart {
     padding: 8px 15px;
-    background-color: #40beb5;
+    background-color: rgb(47, 120, 115);
     color: white;
     border: none;
     border-radius: 5px;
@@ -87,7 +85,7 @@ label {
 }
 
 .add-to-cart:hover {
-    background-color: #2c8f88;
+    background-color: rgb(28, 91, 87);
     transform: translateY(-1px);
 }
 
@@ -123,7 +121,7 @@ th, td {
 }
 
 th {
-    background-color: #40beb5;
+    background-color: #164d4a;
     color: white;
     font-weight: 500;
 }
@@ -136,13 +134,13 @@ td {
     font-size: 1.2em;
     font-weight: bold;
     text-align: right;
-    color: #2c8f88;
+    color: #2a5452;
     margin: 20px 0;
 }
 
 #buy-now {
     padding: 10px 20px;
-    background-color: #5bd3ca;
+    background-color: #2e5452;
     color: white;
     border: none;
     border-radius: 5px;
@@ -154,7 +152,7 @@ td {
 
 #save-favourites {
     padding: 10px 20px;
-    background-color: #40beb5;
+    background-color: #295451;
     color: white;
     border: none;
     border-radius: 5px;
@@ -166,7 +164,7 @@ td {
 
 #apply-favourites {
     padding: 10px 20px;
-    background-color: #2c8f88;
+    background-color: #2d514e;
     color: white;
     border: none;
     border-radius: 5px;
